@@ -1,4 +1,4 @@
-##📱 Projeto ResgateAlerta
+#📱 Projeto ResgateAlerta
 Arquiteturas Disruptivas: IoT, IoB e IA Generativa
 
 ##🎯 Descrição do Projeto
@@ -42,7 +42,7 @@ Função	Descrição
 👉 Simulação Wokwi:
 [https://wokwi.com/projects/432936098760846337](https://wokwi.com/projects/433210825129542657)
 
-🚀 Próximos Passos
+###🚀 Próximos Passos
 Desenvolvimento do MVP funcional, com testes reais de APIs e notificações push.
 
 Integração com banco de dados e criação de rotas seguras, com base em mapas e histórico de eventos climáticos.
