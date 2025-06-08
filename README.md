@@ -1,72 +1,54 @@
-# ResgateAlerta
- API
+##📱 Projeto ResgateAlerta
+Arquiteturas Disruptivas: IoT, IoB e IA Generativa
 
-## Descrição do Projeto
+##🎯 Descrição do Projeto
+O AlertaClima é uma solução mobile que tem como propósito reduzir os impactos de desastres naturais no Brasil, como enchentes, queimadas, deslizamentos e secas.
 
-API RESTful desenvolvida em .NET para gerenciamento de  lacuna entre a detecção de um evento natural e a efetiva disseminação de um alerta acionável para a população específica em risco, utilizando arquitetura em camadas, banco de dados Oracle e documentação via Swagger.
+A aplicação utiliza inteligência artificial, dados climáticos oficiais, geolocalização e colaboração entre usuários para oferecer respostas rápidas e eficazes em situações de emergência.
 
----
+Com base em tecnologias de IoT, sensores ambientais e automação, o sistema realiza monitoramento em tempo real e aciona alertas visuais e digitais com base em condições climáticas críticas.
 
-## Rotas Disponíveis
+##🧠 Tecnologias Utilizadas
+📦 Hardware
+ESP32 – Microcontrolador principal
 
-### Moto
-- `GET /api/moto` – Lista todas as Motos
-- `GET /api/moto/{id}` – Buscar Moto por ID
-- `PUT /api/moto/{id}` – Atualizar Moto
-- `DELETE /api/moto/{id}` – Remover Moto
+Sensor DHT22 – Leitura de temperatura e umidade
 
-### Vaga
-- `GET /api/vaga` – Lista todas as Vagas
-- `GET /api/vaga/{id}` – Buscar Vaga por ID
-- `POST /api/vaga` – Cadastrar nova Vaga
-- `PUT /api/vaga/{id}` – Atualizar Vaga
-- `DELETE /api/vaga/{id}` – Remover Vaga
+LED – Alerta visual de temperatura
 
----
+Resistores e Jumpers – Conexões eletrônicas básicas
 
-## Tecnologias Utilizadas
+##💻 Software e Linguagens
+C++ / Arduino – Linguagem de programação do firmware
 
-- .NET 9
-- ASP.NET Core
-- C#
-- Entity Framework Core
-- Oracle Entity Framework Core (ODP.NET)
-- AutoMapper
-- Swagger (Swashbuckle.AspNetCore)
-- Visual Studio 2022
+Wokwi – Plataforma de simulação do circuito
 
----
+Corretor MQTT (test.mosquitto.org) – Comunicação entre dispositivos
 
-## Instruções de Execução
+PubSubClient – Biblioteca MQTT
 
-1. Clone o projeto:
-   ```bash
-   git clone https://github.com/DGMMX/Challenger-MOTTU.git
-   cd challenger-mottu
-   ```
+DHTesp – Biblioteca para leitura do sensor DHT22
 
-2. Configure a conexão Oracle no `appsettings.json`:
-   ```json
-   "ConnectionStrings": {
-     "Oracle": "User Id=SEU_USUARIO;Password=SUA_SENHA;Data Source=SEU_SERVIDOR"
-   }
-   ```
+##⚙️ Funcionalidades
+Função	Descrição
+🔍 Leitura Ambiental com Precisão	Captura de temperatura e umidade através do sensor DHT22
+📡 Publicação via MQTT	Envio automático de dados para um corretor MQTT público
+🚨 Alerta Visual Inteligente	Acionamento de LED quando a temperatura ultrapassa 30°C
+🧩 Código Modular	Estrutura de código simples e fácil de adaptar para aplicações reais
+🌐 Simulação Online	Testes e simulações via Wokwi, sem necessidade de hardware físico
+📱 Alertas Inteligentes via App	Notificações baseadas na localização e tipo de evento climático
 
-3. Execute os comandos:
-   ```bash
-   dotnet restore
-   dotnet build
-   dotnet run --project Challenger-MOTTU
+##🔗 Acesse o Projeto
+👉 Simulação Wokwi:
+[https://wokwi.com/projects/432936098760846337](https://wokwi.com/projects/433210825129542657)
 
-   ```
+🚀 Próximos Passos
+Desenvolvimento do MVP funcional, com testes reais de APIs e notificações push.
 
-4. Acesse no navegador:
-   - Swagger UI: https://localhost:7231/swagger/index.html
+Integração com banco de dados e criação de rotas seguras, com base em mapas e histórico de eventos climáticos.
 
----
+Parcerias com a Defesa Civil e órgãos públicos locais para validação do sistema em campo.
 
-## 👥 Integrantes
+Campanhas de engajamento comunitário, incentivando o uso colaborativo da aplicação.
 
-- Diego Bassalo RM 558710 2TDSPG (Paulista)
-- Lucas  RM 558506 2TDSR (Aclimação)
-- Pedro Henrique Jorge De Paula RM 558833 2TDSPJ (Paulista)
+Versões offline e inclusivas, garantindo acessibilidade e alcance em áreas remotas ou com baixa conectividade.
