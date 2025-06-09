@@ -42,13 +42,8 @@ Função	Descrição
 👉 Simulação Wokwi:
 [https://wokwi.com/projects/432936098760846337](https://wokwi.com/projects/433210825129542657)
 
-### 🚀 Próximos Passos
-Desenvolvimento do MVP funcional, com testes reais de APIs e notificações push.
+## 👥 Integrantes
 
-Integração com banco de dados e criação de rotas seguras, com base em mapas e histórico de eventos climáticos.
-
-Parcerias com a Defesa Civil e órgãos públicos locais para validação do sistema em campo.
-
-Campanhas de engajamento comunitário, incentivando o uso colaborativo da aplicação.
-
-Versões offline e inclusivas, garantindo acessibilidade e alcance em áreas remotas ou com baixa conectividade.
+- Diego Bassalo RM 558710 2TDSPG (Paulista)
+- Lucas  RM 558506 2TDSR (Aclimação)
+- Pedro Henrique Jorge De Paula RM 558833 2TDSPJ (Paulista)
