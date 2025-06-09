@@ -2,7 +2,7 @@
 Arquiteturas Disruptivas: IoT, IoB e IA Generativa
 
 ## 🎯 Descrição do Projeto
-O AlertaClima é uma solução mobile que tem como propósito reduzir os impactos de desastres naturais no Brasil, como enchentes, queimadas, deslizamentos e secas.
+O ResgateAlerta é uma solução mobile que tem como propósito reduzir os impactos de desastres naturais no Brasil, como enchentes, queimadas, deslizamentos e secas.
 
 A aplicação utiliza inteligência artificial, dados climáticos oficiais, geolocalização e colaboração entre usuários para oferecer respostas rápidas e eficazes em situações de emergência.
 
