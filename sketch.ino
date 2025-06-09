@@ -10,9 +10,8 @@ int mqttPort = 1883;
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-const int DHT_PIN =14 ; // mesmo da imagem
-const int LED_PIN = 15;  // ou outro pino onde o LED está ligado
-
+const int DHT_PIN =14 ; 
+const int LED_PIN = 15;  
 DHTesp dht;
 
 void setup() {
@@ -46,11 +45,9 @@ void loop() {
     Serial.print(data.humidity);
     Serial.println("%");
 
-    // Enviar para o tópico MQTT
     String payload = String(data.temperature);
     client.publish("fiap/led/temp", payload.c_str());
 
-    // Acionar LED se temperatura for maior que 30°C
     digitalWrite(LED_PIN, data.temperature > 30 ? HIGH : LOW);
   }
 
@@ -73,20 +70,3 @@ void reconnect() {
 }
 
 
-
-
-
-
-
-
-///// --------variação para publicar MQTT apenas se houver mudança do sensor
-
-// // Variáveis globais para armazenar os últimos valores de temperatura e umidade
-// float lastTemperature = NAN;
-// float lastHumidity = NAN;
-      // // Verificar se os novos valores de temperatura e umidade são diferentes dos últimos valores armazenados
-      // if (sensorValues.temperature != lastTemperature || sensorValues.humidity != lastHumidity) {
-
-        // // Atualizar os valores armazenados com os novos valores
-        // lastTemperature = sensorValues.temperature;
-        // lastHumidity = sensorValues.humidity;
